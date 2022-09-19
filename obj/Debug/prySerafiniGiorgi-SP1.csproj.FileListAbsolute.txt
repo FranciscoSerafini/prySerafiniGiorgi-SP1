@@ -1,0 +1,14 @@
+C:\Users\Alumno\Downloads\prySerafiniGiorgi-SP1\bin\Debug\prySerafiniGiorgi-SP1.exe.config
+C:\Users\Alumno\Downloads\prySerafiniGiorgi-SP1\bin\Debug\prySerafiniGiorgi-SP1.exe
+C:\Users\Alumno\Downloads\prySerafiniGiorgi-SP1\bin\Debug\prySerafiniGiorgi-SP1.pdb
+C:\Users\Alumno\Downloads\prySerafiniGiorgi-SP1\obj\Debug\prySerafiniGiorgi-SP1.csproj.AssemblyReference.cache
+C:\Users\Alumno\Downloads\prySerafiniGiorgi-SP1\obj\Debug\prySerafiniGiorgi_SP1.frmConsulta.resources
+C:\Users\Alumno\Downloads\prySerafiniGiorgi-SP1\obj\Debug\prySerafiniGiorgi_SP1.frmAgricultura.resources
+C:\Users\Alumno\Downloads\prySerafiniGiorgi-SP1\obj\Debug\prySerafiniGiorgi_SP1.frmCultivos.resources
+C:\Users\Alumno\Downloads\prySerafiniGiorgi-SP1\obj\Debug\prySerafiniGiorgi_SP1.frmLocalidades.resources
+C:\Users\Alumno\Downloads\prySerafiniGiorgi-SP1\obj\Debug\prySerafiniGiorgi_SP1.frmProduccion.resources
+C:\Users\Alumno\Downloads\prySerafiniGiorgi-SP1\obj\Debug\prySerafiniGiorgi_SP1.Properties.Resources.resources
+C:\Users\Alumno\Downloads\prySerafiniGiorgi-SP1\obj\Debug\prySerafiniGiorgi-SP1.csproj.GenerateResource.cache
+C:\Users\Alumno\Downloads\prySerafiniGiorgi-SP1\obj\Debug\prySerafiniGiorgi-SP1.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Downloads\prySerafiniGiorgi-SP1\obj\Debug\prySerafiniGiorgi-SP1.exe
+C:\Users\Alumno\Downloads\prySerafiniGiorgi-SP1\obj\Debug\prySerafiniGiorgi-SP1.pdb
