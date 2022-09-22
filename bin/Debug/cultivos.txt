@@ -1,6 +1,1 @@
-12345 SOJA
-11111 Soja
-11111 Soja
-11111 Soja
-11111 Soja
-11111 Soja
+11111,Licha

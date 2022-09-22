@@ -25,17 +25,34 @@ namespace prySerafiniGiorgi_SP1
 
         private void cmdCargarLoc_Click(object sender, EventArgs e)
         {
-            StreamWriter localidades = new StreamWriter("./localidades.txt", true);
-            localidades.WriteLine(mskCodigoLocalidad.Text + " " + txtLocalidad.Text);
-
-            MessageBox.Show("Usted cargo la localidad y el codigo");
-
-            localidades.Close();
-
-            txtLocalidad.Text = "";
-
-            mskCodigoLocalidad.Text = ""; 
-
+            bool bandera = false;
+            if (File.Exists("./localidades.txt"))
+            {
+                StreamReader lectorLocalides = new StreamReader("./localidades.txt");
+                while (!lectorLocalides.EndOfStream) //leemos el archivo
+                {
+                    string auxlocalides = lectorLocalides.ReadLine();
+                    string [] vecLocalidades = auxlocalides.Split(',');
+                    if (mskCodigoLocalidad.Text == vecLocalidades[0]) //verifiacion que el codigo no se repita
+                    {
+                        MessageBox.Show("El codigo ingresado se repite, intente nuevamente");
+                        mskCodigoLocalidad.Text = "";
+                        mskCodigoLocalidad.Focus();
+                        bandera = true;
+                    }
+                }
+                lectorLocalides.Close();
+            }
+            if (bandera == false)
+            {
+                StreamWriter cargaClientes = new StreamWriter("./localidades.txt",true); //el true crea el archivo si no esta creado
+                cargaClientes.WriteLine(mskCodigoLocalidad.Text + "," + txtLocalidad.Text);
+                MessageBox.Show("Codigo ingresado con exito");
+                txtLocalidad.Text = "";
+                mskCodigoLocalidad.Text = "";
+                txtLocalidad.Focus();
+                cargaClientes.Close();
+            }
             
         }
 
@@ -67,6 +84,11 @@ namespace prySerafiniGiorgi_SP1
             {
                 cmdCargarLoc.Enabled = false;
             }
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
     }

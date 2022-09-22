@@ -12,3 +12,18 @@ C:\Users\Alumno\Downloads\prySerafiniGiorgi-SP1\obj\Debug\prySerafiniGiorgi-SP1.
 C:\Users\Alumno\Downloads\prySerafiniGiorgi-SP1\obj\Debug\prySerafiniGiorgi-SP1.csproj.CoreCompileInputs.cache
 C:\Users\Alumno\Downloads\prySerafiniGiorgi-SP1\obj\Debug\prySerafiniGiorgi-SP1.exe
 C:\Users\Alumno\Downloads\prySerafiniGiorgi-SP1\obj\Debug\prySerafiniGiorgi-SP1.pdb
+E:\ANALISTA EN SISTEMAS\repos\laboratorio-de-programacion-II\REPOSITORIOS CREADOS POR VISUAL1\bin\Debug\prySerafiniGiorgi-SP1.exe.config
+E:\ANALISTA EN SISTEMAS\repos\laboratorio-de-programacion-II\REPOSITORIOS CREADOS POR VISUAL1\bin\Debug\prySerafiniGiorgi-SP1.exe
+E:\ANALISTA EN SISTEMAS\repos\laboratorio-de-programacion-II\REPOSITORIOS CREADOS POR VISUAL1\bin\Debug\prySerafiniGiorgi-SP1.pdb
+E:\ANALISTA EN SISTEMAS\repos\laboratorio-de-programacion-II\REPOSITORIOS CREADOS POR VISUAL1\obj\Debug\prySerafiniGiorgi-SP1.csproj.AssemblyReference.cache
+E:\ANALISTA EN SISTEMAS\repos\laboratorio-de-programacion-II\REPOSITORIOS CREADOS POR VISUAL1\obj\Debug\prySerafiniGiorgi-SP1.csproj.SuggestedBindingRedirects.cache
+E:\ANALISTA EN SISTEMAS\repos\laboratorio-de-programacion-II\REPOSITORIOS CREADOS POR VISUAL1\obj\Debug\prySerafiniGiorgi_SP1.frmConsulta.resources
+E:\ANALISTA EN SISTEMAS\repos\laboratorio-de-programacion-II\REPOSITORIOS CREADOS POR VISUAL1\obj\Debug\prySerafiniGiorgi_SP1.frmAgricultura.resources
+E:\ANALISTA EN SISTEMAS\repos\laboratorio-de-programacion-II\REPOSITORIOS CREADOS POR VISUAL1\obj\Debug\prySerafiniGiorgi_SP1.frmCultivos.resources
+E:\ANALISTA EN SISTEMAS\repos\laboratorio-de-programacion-II\REPOSITORIOS CREADOS POR VISUAL1\obj\Debug\prySerafiniGiorgi_SP1.frmLocalidades.resources
+E:\ANALISTA EN SISTEMAS\repos\laboratorio-de-programacion-II\REPOSITORIOS CREADOS POR VISUAL1\obj\Debug\prySerafiniGiorgi_SP1.frmProduccion.resources
+E:\ANALISTA EN SISTEMAS\repos\laboratorio-de-programacion-II\REPOSITORIOS CREADOS POR VISUAL1\obj\Debug\prySerafiniGiorgi_SP1.Properties.Resources.resources
+E:\ANALISTA EN SISTEMAS\repos\laboratorio-de-programacion-II\REPOSITORIOS CREADOS POR VISUAL1\obj\Debug\prySerafiniGiorgi-SP1.csproj.GenerateResource.cache
+E:\ANALISTA EN SISTEMAS\repos\laboratorio-de-programacion-II\REPOSITORIOS CREADOS POR VISUAL1\obj\Debug\prySerafiniGiorgi-SP1.csproj.CoreCompileInputs.cache
+E:\ANALISTA EN SISTEMAS\repos\laboratorio-de-programacion-II\REPOSITORIOS CREADOS POR VISUAL1\obj\Debug\prySerafiniGiorgi-SP1.exe
+E:\ANALISTA EN SISTEMAS\repos\laboratorio-de-programacion-II\REPOSITORIOS CREADOS POR VISUAL1\obj\Debug\prySerafiniGiorgi-SP1.pdb

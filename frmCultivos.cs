@@ -33,33 +33,35 @@ namespace prySerafiniGiorgi_SP1
         private void cmdCargarLoc_Click(object sender, EventArgs e)
         {
             bool bandera = false;
-            StreamReader srNumeroDeCultivos = new StreamReader("./cultivos.txt");
-
-            while (!srNumeroDeCultivos.EndOfStream)
-                
+            if (File.Exists("./cultivos.txt"))
             {
-                string auxCodigo = srNumeroDeCultivos.ReadLine();
-                if (mskCodigoCultivo.Text == auxCodigo.Substring(0, 5))
+                StreamReader lectorCultivos = new StreamReader("./cultivos.txt");
+                while (!lectorCultivos.EndOfStream) //recorrer el archivo
                 {
-                    
-                    MessageBox.Show("Este codigo ya se encuentra cargado, intente con otro");
-                    bandera = true;
-
+                    string AuxCultivos = lectorCultivos.ReadLine();
+                    string [] VecCultivos = AuxCultivos.Split(',');
+                    if (mskCodigoCultivo.Text == VecCultivos[0]) //comparacion de codigos para que no se repitan
+                    {
+                        MessageBox.Show("Tu codigo se repite, intente con otro");
+                        mskCodigoCultivo.Text = "";
+                        mskCodigoCultivo.Focus();
+                        bandera = true;
+                    }
                 }
-               
+                lectorCultivos.Close();
             }
-            srNumeroDeCultivos.Close();
             if (bandera == false)
             {
-                StreamWriter cultivos = new StreamWriter("./cultivos.txt", true);
-                cultivos.WriteLine(mskCodigoCultivo.Text + " " + txtCultivos.Text);
-                MessageBox.Show("Cargado con exito");
-                cultivos.Close();
+                StreamWriter cargaCultivos = new StreamWriter("./cultivos.txt");
+                cargaCultivos.WriteLine(mskCodigoCultivo.Text + "," + txtCultivos.Text);
+                MessageBox.Show("Tu codigo fue cargado con exito");
+                cargaCultivos.Close();
                 txtCultivos.Text = "";
                 mskCodigoCultivo.Text = "";
-                mskCodigoCultivo.Focus();
 
             }
+
+            
 
 
 
@@ -82,11 +84,11 @@ namespace prySerafiniGiorgi_SP1
         {
             if (mskCodigoCultivo.Text != "")
             {
-                cmdCargarCult.Enabled = true;
+                cmdCargarCultivo.Enabled = true;
             }
             else
             {
-                cmdCargarCult.Enabled =false;
+                cmdCargarCultivo.Enabled =false;
             }
         }
     }
