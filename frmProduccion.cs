@@ -46,7 +46,7 @@ namespace prySerafiniGiorgi_SP1
         private void cmdCargarLoc_Click(object sender, EventArgs e)
         {
             StreamWriter producciones = new StreamWriter("./producciones.txt", true);
-            producciones.WriteLine(lstLocalidad.Text + " " +  lstCultivos.Text +  txtToneladas.Text );
+            producciones.WriteLine(dtpFechaProdu.Text + "," +lstLocalidad.Text + " " +  lstCultivos.Text +  txtToneladas.Text );
            
             MessageBox.Show("Usted cargo los datos correctamente");
             //ceramos el archivo
@@ -56,6 +56,7 @@ namespace prySerafiniGiorgi_SP1
             txtToneladas.Focus();
             lstLocalidad.Text = "";
             lstCultivos.Text = "";
+            dtpFechaProdu.Text = "";
 
             
             

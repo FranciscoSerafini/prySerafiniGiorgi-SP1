@@ -48,8 +48,13 @@ private void localidadesToolStripMenuItem_Click(object sender, EventArgs e)
 
         private void consultasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmConsulta frmConsulta = new frmConsulta();
-            frmConsulta.ShowDialog();
+            
+        }
+
+        private void localidadesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmConsultaLocalidades VentanaConsultaLocalidades = new frmConsultaLocalidades();
+            VentanaConsultaLocalidades.ShowDialog();
         }
     }
 }

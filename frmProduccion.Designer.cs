@@ -37,7 +37,7 @@
             this.txtToneladas = new System.Windows.Forms.TextBox();
             this.lstCultivos = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaProdu = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // cmdCargarProduccion
@@ -133,19 +133,19 @@
             this.label5.TabIndex = 17;
             this.label5.Text = "Fecha";
             // 
-            // dateTimePicker1
+            // dtpFechaProdu
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(89, 53);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 18;
+            this.dtpFechaProdu.Location = new System.Drawing.Point(89, 53);
+            this.dtpFechaProdu.Name = "dtpFechaProdu";
+            this.dtpFechaProdu.Size = new System.Drawing.Size(200, 20);
+            this.dtpFechaProdu.TabIndex = 18;
             // 
             // frmProduccion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(309, 270);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpFechaProdu);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lstCultivos);
             this.Controls.Add(this.txtToneladas);
@@ -174,6 +174,6 @@
         private System.Windows.Forms.TextBox txtToneladas;
         private System.Windows.Forms.ComboBox lstCultivos;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpFechaProdu;
     }
 }
