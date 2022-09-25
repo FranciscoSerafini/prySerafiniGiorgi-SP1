@@ -37,7 +37,7 @@
             this.txtToneladas = new System.Windows.Forms.TextBox();
             this.lstCultivos = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.dtpFechaProdu = new System.Windows.Forms.DateTimePicker();
+            this.mskFechaProduccion = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // cmdCargarProduccion
@@ -133,19 +133,21 @@
             this.label5.TabIndex = 17;
             this.label5.Text = "Fecha";
             // 
-            // dtpFechaProdu
+            // mskFechaProduccion
             // 
-            this.dtpFechaProdu.Location = new System.Drawing.Point(89, 53);
-            this.dtpFechaProdu.Name = "dtpFechaProdu";
-            this.dtpFechaProdu.Size = new System.Drawing.Size(200, 20);
-            this.dtpFechaProdu.TabIndex = 18;
+            this.mskFechaProduccion.Location = new System.Drawing.Point(89, 53);
+            this.mskFechaProduccion.Mask = "00/00/0000";
+            this.mskFechaProduccion.Name = "mskFechaProduccion";
+            this.mskFechaProduccion.Size = new System.Drawing.Size(200, 20);
+            this.mskFechaProduccion.TabIndex = 18;
+            this.mskFechaProduccion.ValidatingType = typeof(System.DateTime);
             // 
             // frmProduccion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(309, 270);
-            this.Controls.Add(this.dtpFechaProdu);
+            this.Controls.Add(this.mskFechaProduccion);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lstCultivos);
             this.Controls.Add(this.txtToneladas);
@@ -174,6 +176,6 @@
         private System.Windows.Forms.TextBox txtToneladas;
         private System.Windows.Forms.ComboBox lstCultivos;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dtpFechaProdu;
+        private System.Windows.Forms.MaskedTextBox mskFechaProduccion;
     }
 }

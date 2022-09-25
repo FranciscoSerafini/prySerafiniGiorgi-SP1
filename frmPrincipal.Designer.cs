@@ -113,12 +113,14 @@
             this.cultivosToolStripMenuItem1.Name = "cultivosToolStripMenuItem1";
             this.cultivosToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.cultivosToolStripMenuItem1.Text = "Cultivos";
+            this.cultivosToolStripMenuItem1.Click += new System.EventHandler(this.cultivosToolStripMenuItem1_Click);
             // 
             // produccionToolStripMenuItem1
             // 
             this.produccionToolStripMenuItem1.Name = "produccionToolStripMenuItem1";
             this.produccionToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.produccionToolStripMenuItem1.Text = "Produccion";
+            this.produccionToolStripMenuItem1.Click += new System.EventHandler(this.produccionToolStripMenuItem1_Click);
             // 
             // frmAgricultura
             // 

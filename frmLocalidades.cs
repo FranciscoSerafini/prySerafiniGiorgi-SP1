@@ -50,7 +50,7 @@ namespace prySerafiniGiorgi_SP1
                 MessageBox.Show("Codigo ingresado con exito");
                 txtLocalidad.Text = "";
                 mskCodigoLocalidad.Text = "";
-                txtLocalidad.Focus();
+                mskCodigoLocalidad.Focus();
                 cargaClientes.Close();
             }
             
@@ -63,26 +63,25 @@ namespace prySerafiniGiorgi_SP1
 
         private void txtLocalidad_TextChanged(object sender, EventArgs e)
         {
-            if (txtLocalidad.Text != "")
-            {
-                mskCodigoLocalidad.Enabled = true;
-
-            }
-            else
-            {
-                mskCodigoLocalidad.Enabled = false;
-            }
-        }
-
-        private void mskCodigoLocalidad_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-            if (mskCodigoLocalidad.Text != "")
+            if (mskCodigoLocalidad.Text != "" && txtLocalidad.Text != "")
             {
                 cmdCargarLoc.Enabled = true;
             }
             else
             {
                 cmdCargarLoc.Enabled = false;
+            }
+        }
+
+        private void mskCodigoLocalidad_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+            if (mskCodigoLocalidad.Text !="" && txtLocalidad.Text != "")
+            {
+                cmdCargarLoc.Enabled = true;
+            }
+            else
+            {
+                cmdCargarLoc.Enabled=false;
             }
 
         }

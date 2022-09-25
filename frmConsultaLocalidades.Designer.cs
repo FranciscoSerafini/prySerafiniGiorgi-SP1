@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.cmdLimpiar = new System.Windows.Forms.Button();
-            this.cmdListar = new System.Windows.Forms.Button();
+            this.cmdListarLocalidades = new System.Windows.Forms.Button();
             this.grillaLocalidad = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,16 +44,17 @@
             this.cmdLimpiar.TabIndex = 8;
             this.cmdLimpiar.Text = "Limpiar";
             this.cmdLimpiar.UseVisualStyleBackColor = true;
+            this.cmdLimpiar.Click += new System.EventHandler(this.cmdLimpiar_Click);
             // 
-            // cmdListar
+            // cmdListarLocalidades
             // 
-            this.cmdListar.Location = new System.Drawing.Point(166, 151);
-            this.cmdListar.Name = "cmdListar";
-            this.cmdListar.Size = new System.Drawing.Size(100, 23);
-            this.cmdListar.TabIndex = 7;
-            this.cmdListar.Text = "Listar";
-            this.cmdListar.UseVisualStyleBackColor = true;
-            this.cmdListar.Click += new System.EventHandler(this.cmdListar_Click);
+            this.cmdListarLocalidades.Location = new System.Drawing.Point(166, 151);
+            this.cmdListarLocalidades.Name = "cmdListarLocalidades";
+            this.cmdListarLocalidades.Size = new System.Drawing.Size(100, 23);
+            this.cmdListarLocalidades.TabIndex = 7;
+            this.cmdListarLocalidades.Text = "Listar";
+            this.cmdListarLocalidades.UseVisualStyleBackColor = true;
+            this.cmdListarLocalidades.Click += new System.EventHandler(this.cmdListar_Click);
             // 
             // grillaLocalidad
             // 
@@ -69,6 +70,7 @@
             this.grillaLocalidad.RowTemplate.Height = 24;
             this.grillaLocalidad.Size = new System.Drawing.Size(255, 122);
             this.grillaLocalidad.TabIndex = 6;
+            this.grillaLocalidad.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grillaLocalidad_CellContentClick);
             // 
             // Column1
             // 
@@ -90,10 +92,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(282, 178);
             this.Controls.Add(this.cmdLimpiar);
-            this.Controls.Add(this.cmdListar);
+            this.Controls.Add(this.cmdListarLocalidades);
             this.Controls.Add(this.grillaLocalidad);
             this.Name = "frmConsultaLocalidades";
-            this.Text = "frmConsultaLocalidades";
+            this.Text = "Consulta localidades";
             this.Load += new System.EventHandler(this.frmConsultaLocalidades_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grillaLocalidad)).EndInit();
             this.ResumeLayout(false);
@@ -103,7 +105,7 @@
         #endregion
 
         private System.Windows.Forms.Button cmdLimpiar;
-        private System.Windows.Forms.Button cmdListar;
+        private System.Windows.Forms.Button cmdListarLocalidades;
         private System.Windows.Forms.DataGridView grillaLocalidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;

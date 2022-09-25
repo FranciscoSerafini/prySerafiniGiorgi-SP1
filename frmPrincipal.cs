@@ -56,5 +56,17 @@ private void localidadesToolStripMenuItem_Click(object sender, EventArgs e)
             frmConsultaLocalidades VentanaConsultaLocalidades = new frmConsultaLocalidades();
             VentanaConsultaLocalidades.ShowDialog();
         }
+
+        private void cultivosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmConsultaCultivos VentanaConsultaCultivos = new frmConsultaCultivos();
+            VentanaConsultaCultivos.ShowDialog();
+        }
+
+        private void produccionToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmConsultaProduccion VentanaConsultaProduccion = new frmConsultaProduccion();
+            VentanaConsultaProduccion.ShowDialog();
+        }
     }
 }

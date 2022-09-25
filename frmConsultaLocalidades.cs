@@ -33,5 +33,15 @@ namespace prySerafiniGiorgi_SP1
                 grillaLocalidad.Rows.Add(VecLocalidades[0], VecLocalidades[1]);
             }
         }
+
+        private void cmdLimpiar_Click(object sender, EventArgs e)
+        {
+            grillaLocalidad.Rows.Clear();
+        }
+
+        private void grillaLocalidad_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

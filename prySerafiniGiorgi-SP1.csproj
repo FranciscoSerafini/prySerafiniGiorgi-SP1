@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsultaProduccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaProduccion.Designer.cs">
+      <DependentUpon>ConsultaProduccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaCultivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaCultivos.Designer.cs">
+      <DependentUpon>frmConsultaCultivos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmConsultaLocalidades.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +90,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ConsultaProduccion.resx">
+      <DependentUpon>ConsultaProduccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaCultivos.resx">
+      <DependentUpon>frmConsultaCultivos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmConsultaLocalidades.resx">
       <DependentUpon>frmConsultaLocalidades.cs</DependentUpon>
     </EmbeddedResource>

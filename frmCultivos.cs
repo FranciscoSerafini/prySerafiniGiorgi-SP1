@@ -58,6 +58,7 @@ namespace prySerafiniGiorgi_SP1
                 cargaCultivos.Close();
                 txtCultivos.Text = "";
                 mskCodigoCultivo.Text = "";
+                mskCodigoCultivo.Focus();
 
             }
 
@@ -70,25 +71,25 @@ namespace prySerafiniGiorgi_SP1
 
         private void txtCultivos_TextChanged(object sender, EventArgs e)
         {
-            if (txtCultivos.Text !="")
-            {
-                mskCodigoCultivo.Enabled = true;
-            }
-            else
-            {
-                mskCodigoCultivo.Enabled=false;
-            }
-        }
-
-        private void mskCodigoCultivo_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-            if (mskCodigoCultivo.Text != "")
+            if (mskCodigoCultivo.Text != "" && txtCultivos.Text != "")
             {
                 cmdCargarCultivo.Enabled = true;
             }
             else
             {
-                cmdCargarCultivo.Enabled =false;
+                cmdCargarCultivo.Enabled = false;
+            }
+        }
+
+        private void mskCodigoCultivo_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+            if (mskCodigoCultivo.Text != "" && txtCultivos.Text != "")
+            {
+                cmdCargarCultivo.Enabled = true;
+            }
+            else
+            {
+                cmdCargarCultivo.Enabled = false;
             }
         }
     }

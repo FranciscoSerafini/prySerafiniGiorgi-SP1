@@ -91,7 +91,6 @@
             // 
             // mskCodigoLocalidad
             // 
-            this.mskCodigoLocalidad.Enabled = false;
             this.mskCodigoLocalidad.Location = new System.Drawing.Point(108, 57);
             this.mskCodigoLocalidad.Mask = "99999";
             this.mskCodigoLocalidad.Name = "mskCodigoLocalidad";

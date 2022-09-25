@@ -22,31 +22,29 @@ namespace prySerafiniGiorgi_SP1
         {
             //creamos los lectores para recorrer los archivos
             StreamReader lectorLocalidad = new StreamReader("./localidades.txt");
-            StreamReader lectorCultivo = new StreamReader("./cultivos.txt");
-
             //recorremos el archivo para luego cargarlo
             while (!lectorLocalidad.EndOfStream)
             {
                 string informacionLocalidad = lectorLocalidad.ReadLine();
 
-                lstLocalidad.Items.Add(informacionLocalidad.Substring(5));
+                lstLocalidad.Items.Add(informacionLocalidad.Substring(6));
 
             }
             lectorLocalidad.Close();
-
+            StreamReader lectorCultivo = new StreamReader("./cultivos.txt");
             while (!lectorCultivo.EndOfStream)
             {
-                string informacionCultivos = lectorCultivo.ReadLine();
-                lstCultivos.Items.Add(informacionCultivos.Substring(5));
-
+                string informacionCultivo = lectorCultivo.ReadLine();
+                lstCultivos.Items.Add(informacionCultivo.Substring(6));
             }
-            lectorCultivo.Close();
+
+
         }
 
         private void cmdCargarLoc_Click(object sender, EventArgs e)
         {
             StreamWriter producciones = new StreamWriter("./producciones.txt", true);
-            producciones.WriteLine(dtpFechaProdu.Text + "," +lstLocalidad.Text + " " +  lstCultivos.Text +  txtToneladas.Text );
+            producciones.WriteLine(mskFechaProduccion.Text + "," +lstLocalidad.SelectedItem + "," +  lstCultivos.SelectedItem  + "," +txtToneladas.Text);
            
             MessageBox.Show("Usted cargo los datos correctamente");
             //ceramos el archivo
@@ -56,11 +54,7 @@ namespace prySerafiniGiorgi_SP1
             txtToneladas.Focus();
             lstLocalidad.Text = "";
             lstCultivos.Text = "";
-            dtpFechaProdu.Text = "";
-
-            
-            
-
+            mskFechaProduccion.Text = "";
         }
 
         private void lstLocalidad_SelectedIndexChanged(object sender, EventArgs e)
